@@ -8,6 +8,13 @@
   font-family: "Poiret One", serif;
 }
 
+.clip-circle-closed {
+  clip-path: circle(0% at top right);
+}
+.clip-circle-open {
+  clip-path: circle(150% at top right);
+}
+
 /* div {
   border: 1px solid red;
 } */
