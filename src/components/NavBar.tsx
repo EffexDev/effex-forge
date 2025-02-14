@@ -44,7 +44,9 @@ function NavBar() {
                             <NavButtons />
                         </div>
                         <Button sx={{ py: 2, mt: 2, color: "black", border: "1px solid black"}} variant="outlined" size="large" className="mt-6">Contact</Button>
-                        <Socials />
+                        <div className="pl-1">
+                            <Socials />
+                        </div>
                     </div>
                 </div>
             )}
