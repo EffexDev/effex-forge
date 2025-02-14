@@ -13,14 +13,14 @@ function NavBar() {
     };
 
     return (
-        <div className="relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-10 bg-gradient-to-b from-black text-white shadow-stone-950">
+        <div className="relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-5 sm:pl-10 bg-gradient-to-b from-black text-white shadow-stone-950">
             <div className="w-full flex justify-between items-center">
-                <div className="flex items-center justify-start w-auto sm:w-1/2">
+                <div className="flex items-start justify-start sm:items-start w-auto sm:w-1/2">
                     <Socials />
                 </div>
 
                 <div className="sm:hidden flex items-center">
-                    <button onClick={toggleMenu} className="text-white">
+                    <button onClick={toggleMenu} className="text-white pt-2">
                         {isMenuOpen ? <Close /> : <MenuIcon />}
                     </button>
                 </div>
@@ -35,7 +35,7 @@ function NavBar() {
 
             {isMenuOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-white text-black flex flex-col justify-center items-center z-30 sm:hidden">
-                    <button onClick={toggleMenu} className="absolute top-4 right-10">
+                    <button onClick={toggleMenu} className="absolute top-8 right-10">
                         <Close />
                     </button>
 

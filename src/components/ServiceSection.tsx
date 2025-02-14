@@ -1,4 +1,4 @@
-import { servicesData } from "../Data/servicesData";
+import { servicesData } from "../data/servicesData";
 import ServiceCard from "./ServiceCard";
 
 function ServiceSection() {
