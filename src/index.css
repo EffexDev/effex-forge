@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+* {
+  margin: 0px;
+}
+
+#title {
+  font-family: "Poiret One", serif;
+}
+
+/* div {
+  border: 1px solid red;
+} */
