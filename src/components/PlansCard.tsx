@@ -10,9 +10,9 @@ import FadeIn from '../functions/FadeIn';
 function PlansCard({ title, description, price, img, alt, button, site }: { title: string; description: string, price: number, img: string, alt: string, button: string, site: string }) {
     return (
         <FadeIn>
-        <Card sx={{borderRadius: 5, padding: 4}}>
+        <Card className="h-full flex flex-col" sx={{borderRadius: 5, padding: 2}}>
           <CardMedia
-            sx={{ height: 140 }}
+            sx={{ height: 200, borderRadius: 5 }}
             image={img}
             title={alt}
           />
@@ -23,12 +23,12 @@ function PlansCard({ title, description, price, img, alt, button, site }: { titl
             <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', whiteSpace: "pre-line" }}>
               {description}
             </Typography>
-            <Typography variant='h5' sx={{paddingTop: 3}}>
-                ${price} + {site}
-            </Typography>
           </CardContent>
-          <CardActions>        
-            <Button variant="contained" size="small">{button}</Button>
+          <CardActions className="flex flex-col" sx={{marginTop: "auto"}}>    
+            <Typography variant='h5'> 
+                ${price}/mo + {site}
+            </Typography>    
+            <Button variant="contained" size="large" sx={{width: '100%', paddingTop: 2, marginTop: 2, backgroundColor: 'purple', fontWeight: "Bold"}}>{button}</Button>
           </CardActions>
         </Card>
         </FadeIn>
