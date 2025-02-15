@@ -2,6 +2,7 @@ import './index.css';
 import Hero from './components/Hero';
 import ServiceSection from './components/ServiceSection';
 import PlansSection from './components/PlansSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <ServiceSection />
       <PlansSection />
+      <Footer />
     </>
   );
 }
