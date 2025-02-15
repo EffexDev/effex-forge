@@ -1,3 +1,8 @@
+import basicHosting from '../assets/basicHosting.jpg'
+import basicStatic from '../assets/basicStatic.jpg'
+import standardPlan from '../assets/standardPlan.jpg'
+
+
 export const plansData = [
     {
         id: 1,
@@ -7,7 +12,7 @@ export const plansData = [
         Free Professional Emails`,
         price: 19.99,
         site: "Self-Provided Site",
-        img: "src/assets/basicHosting.jpg",
+        img: {basicHosting},
         alt: "Basic - Hosting Plan",
         button: "Purchase"
     },
@@ -20,7 +25,7 @@ export const plansData = [
         Basic React.js Site`,
         price: 39.99,
         site: "Website from $149",
-        img: "src/assets/basicStatic.jpg",
+        img: {basicStatic},
         alt: "Basic - Static Site",
         button: "Get a Quote"
     },
@@ -34,7 +39,7 @@ export const plansData = [
         Monthly Backups`,
         price: 69.99,
         site: "Website from $299",
-        img: "src/assets/standardPlan.jpg",
+        img: {standardPlan},
         alt: "Standard Plan",
         button: "Get a Quote"
     },
