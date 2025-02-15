@@ -2,10 +2,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 
-function PlansCard() {
+function PlansCard({ title, description, price }: { title: string; description: string, price: number }) {
     return (
         <Card>
-            <CardContent>Basic - Hosting Only</CardContent>
+            <CardContent>{title}</CardContent>
+            <CardContent>{description}</CardContent>
+            <CardContent>${price}</CardContent>
         </Card>
     )
 }
