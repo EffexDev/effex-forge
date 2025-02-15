@@ -12,7 +12,7 @@ export const plansData = [
         Free Professional Emails`,
         price: 19.99,
         site: "Self-Provided Site",
-        img: {basicHosting},
+        img: basicHosting,
         alt: "Basic - Hosting Plan",
         button: "Purchase"
     },
@@ -25,7 +25,7 @@ export const plansData = [
         Basic React.js Site`,
         price: 39.99,
         site: "Website from $149",
-        img: {basicStatic},
+        img: basicStatic,
         alt: "Basic - Static Site",
         button: "Get a Quote"
     },
@@ -39,7 +39,7 @@ export const plansData = [
         Monthly Backups`,
         price: 69.99,
         site: "Website from $299",
-        img: {standardPlan},
+        img: standardPlan,
         alt: "Standard Plan",
         button: "Get a Quote"
     },
