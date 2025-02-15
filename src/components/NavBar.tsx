@@ -17,7 +17,7 @@ function NavBar() {
         <div className="relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-5 sm:pl-10 bg-gradient-to-b from-black text-white shadow-stone-950">
             <div className="w-full flex justify-between items-center">
                 <div className="flex items-start justify-start sm:items-start w-auto sm:w-1/2">
-                    <Socials />
+                    <Socials flexDirection="row"/>
                 </div>
 
                 <div className="sm:hidden flex items-center">
@@ -43,7 +43,7 @@ function NavBar() {
 
                 <div className="flex flex-col items-center justify-center space-y-6">
                     <div className="flex flex-col items-center justify-center text-2xl">
-                        <NavButtons />
+                        <NavButtons flexDirection="col"/>
                     </div>
                     <Button sx={{ py: 2, mt: 2, color: "black", border: "1px solid black" }} variant="outlined" size="large" className="mt-6">Contact</Button>
                     <div className="pl-1 pt-10">
