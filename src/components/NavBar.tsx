@@ -5,6 +5,7 @@ import NavButtons from "./NavButtons";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from "@mui/icons-material";
 import { useLocation } from "react-router";
+import { Link } from "react-router";
 import "../index.css"
 
 function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, buttonColor: string;}) {
@@ -34,8 +35,12 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
                     <NavButtons />
                 </div>
                 <div className="hidden sm:flex justify-end w-auto sm:w-1/2">
+                    <Link to="/contact">
                     <Button sx={{ py: 2, color: `${buttonColor}`, border: `1px solid ${buttonColor}` }} variant="outlined" size="large">Contact</Button>
+                    </Link>
                 </div>
+
+                 
             </div>
 
             {/* Expanding Circular Mobile Menu */}
@@ -49,7 +54,9 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
                     <div className="flex flex-col items-center justify-center text-2xl">
                         <NavButtons flexDirection="col"/>
                     </div>
+                    <Link to="/contact">
                     <Button sx={{ py: 2, mt: 2, color: "black", border: "1px solid black" }} variant="outlined" size="large" className="mt-6">Contact</Button>
+                    </Link>
                     <div className="pl-1 pt-10">
                         <Socials />
                     </div>

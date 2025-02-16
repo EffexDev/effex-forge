@@ -1,7 +1,7 @@
 function AboutSheet() {
     return (
         <div className="py-10 sm:pt-0">
-            <div className="bg-gray-900 max-w-3xl text-white sm:rounded-l-lg py-20 sm:py-10 pl-10 pr-10 sm:pr-30 ">
+            <div className="bg-gray-900/80 max-w-3xl text-white sm:rounded-l-lg md:rounded-lg py-20 sm:py-10 pl-10 pr-10 sm:pr-30 ">
                 <h1 id="title" className="text-4xl">Hey, I’m Jordan!</h1>
                 <br />
                 <p>
