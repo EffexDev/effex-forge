@@ -4,7 +4,7 @@ import Socials from "./Socials";
 import NavButtons from "./NavButtons";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from "@mui/icons-material";
-import { Link, useLocation } from "react-router";
+import { useLocation } from "react-router";
 import "../index.css"
 
 function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, buttonColor: string;}) {
@@ -54,6 +54,7 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
                         <Socials />
                     </div>
                 </div>
+                
             </div>
         </div>
     );
