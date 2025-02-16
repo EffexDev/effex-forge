@@ -12,7 +12,7 @@ function Hero() {
         
         {/* <div className="absolute inset-0 bg-gray-400/20" /> */}
 
-        <NavBar />
+        <NavBar textColor="white" buttonColor="white"/>
 
         <div className="relative h-full w-full flex flex-col justify-center items-center text-center text-white px-4 sm:px-8 lg:px-16">
           <div className="flex flex-col items-center w-3xl max-w-[90%] sm:max-w-[70%] md:max-w-[50%] pb-20">
