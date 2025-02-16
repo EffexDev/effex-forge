@@ -4,6 +4,7 @@ import Socials from "./Socials";
 import NavButtons from "./NavButtons";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from "@mui/icons-material";
+import { Link, useLocation } from "react-router";
 import "../index.css"
 
 function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, buttonColor: string;}) {
@@ -13,6 +14,9 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
     return (
         <div className={`relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-5 sm:pl-10  text-${textColor} `}>
             <div className="w-full flex justify-between items-center">
@@ -21,8 +25,8 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
                 </div>
 
                 <div className="sm:hidden flex items-center">
-                    <button onClick={toggleMenu} className="text-white pt-2 relative z-40">
-                        {isMenuOpen ? null : <MenuIcon />}
+                    <button onClick={toggleMenu} className="text-white pt-2 relative">
+                        {isMenuOpen ? <MenuIcon sx={{ color: isHomePage ? "white" : "black"}}/> : <MenuIcon sx={{ color: isHomePage ? "white" : "black"}}/>}
                     </button>
                 </div>
 
@@ -43,7 +47,7 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
 
                 <div className="flex flex-col items-center justify-center space-y-6">
                     <div className="flex flex-col items-center justify-center text-2xl">
-                        <NavButtons />
+                        <NavButtons flexDirection="col"/>
                     </div>
                     <Button sx={{ py: 2, mt: 2, color: "black", border: "1px solid black" }} variant="outlined" size="large" className="mt-6">Contact</Button>
                     <div className="pl-1 pt-10">
