@@ -8,7 +8,7 @@ function About() {
     return (
         <>
             <NavBar textColor="black" buttonColor="black"/>
-                <div className="flex flex-col sm:flex-row justify-between items-center sm:pl-40 pb-4 pt-8 sm:pt-3">
+                <div className="flex flex-col sm:flex-row justify-between  2xl:justify-evenly items-center sm:pl-40 pb-4 pt-8 sm:pt-3">
                     <Avatar />
                     <AboutSheet />
                 </div>
