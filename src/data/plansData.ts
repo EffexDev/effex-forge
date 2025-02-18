@@ -14,7 +14,7 @@ export const plansData = [
         site: "Self-Provided Site",
         img: basicHosting,
         alt: "Basic - Hosting Plan",
-        button: "Purchase"
+        button: "Get a Quote"
     },
     {
         id: 2,

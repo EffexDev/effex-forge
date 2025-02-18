@@ -84,7 +84,7 @@ const ContactForm = () => {
         type="submit"
         variant="contained"
         endIcon={<Send />}
-        >Submit</Button>    <h1>This will send open a mailto link in your computers default mail client</h1>
+        >Submit</Button>    <h1>This will open a mailto: link in your computers default mail client</h1>
     </div>
     </form>
   );
