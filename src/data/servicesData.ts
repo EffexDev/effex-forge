@@ -12,7 +12,7 @@ export const servicesData = [
     {
         id: 3,
         title: "Domain Registration",
-        description: "Secure your perfect domain name effortlessly, with support for transfers, renewals, and DNS management all in one place."
+        description: "Grab your perfect domain name effortlessly, with support for transfers, renewals, and DNS management all in one place."
     },
     {
         id: 4,
@@ -22,7 +22,7 @@ export const servicesData = [
     {
         id: 5,
         title: "Hassle-Free Hosting",
-        description: "Add your pricing strategy. Be sure to include important details like value, length of service, and why it’s unique."
+        description: "Get affordable, care free hosting that you don't have to worry about. I'll handle the complicated stuff and you can focus on building your business."
     },
     {
         id: 6,

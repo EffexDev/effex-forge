@@ -79,11 +79,13 @@ const ContactForm = () => {
       </label>
     </div>
 
-    <Button 
-    type="submit"
-    variant="contained"
-    endIcon={<Send />}
-    >Submit</Button>
+    <div className="flex flex-row justify-between items-baseline">
+        <Button 
+        type="submit"
+        variant="contained"
+        endIcon={<Send />}
+        >Submit</Button>    <h1>This will send open a mailto link in your computers default mail client</h1>
+    </div>
     </form>
   );
 };
