@@ -19,7 +19,7 @@ function NavBar({textColor ="white", buttonColor="white"}: {textColor: string, b
     const isHomePage = location.pathname === "/";
 
     return (
-        <div className={`relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-5 sm:pl-10  text-${textColor} `}>
+        <div className={`relative top-0 left-0 w-full z-20 flex justify-between items-center pt-6 pb-6 pr-10 pl-5 sm:pl-10 shadow-lg text-${textColor} `}>
             <div className="w-full flex justify-between items-center">
                 <div className="flex items-start justify-start sm:items-start w-auto sm:w-1/2">
                     <Socials />
