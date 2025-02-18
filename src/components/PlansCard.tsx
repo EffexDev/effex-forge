@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import FadeIn from '../functions/FadeIn';
+import { Link } from 'react-router';
 
 
 function PlansCard({ title, description, price, img, alt, button, site }: { title: string; description: string, price: number, img: string, alt: string, button: string, site: string }) {
@@ -28,7 +29,9 @@ function PlansCard({ title, description, price, img, alt, button, site }: { titl
             <Typography variant='h6' sx={{textAlign: "center"}}> 
                 ${price}/mo + {site}
             </Typography>    
-            <Button variant="contained" size="large" sx={{width: '100%', paddingTop: 2, marginTop: 2, backgroundColor: 'orange'}}>{button}</Button>
+            <Link to="/contact">
+              <Button variant="contained" size="large" sx={{width: '100%', paddingTop: 2, marginTop: 2, backgroundColor: 'orange'}}>{button}</Button>
+            </Link>
           </CardActions>
         </Card>
         </FadeIn>
