@@ -3,10 +3,10 @@ import { plansData } from "../data/plansData";
 
 function PlansSection() {
     return (
-        <div className="pr-10 pl-10 pt-10 pb-10 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
+        <div className="py-10  sm:p-10 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
             <div className="flex flex-col items-center justify-center pb-5">
                 <h1 id="title" className="text-white text-4xl sm:text-6xl text-center">Managed Hosting Services</h1>
-                <p className=" text-white text-center pt-3 sm:max-w-300 sm:text-2xl">
+                <p className=" text-white text-center pt-3 sm:max-w-300 sm:text-2xl p-2">
                   Take the stress out of hosting with our managed services. I'll handle the technical side of your website, from performance optimization to security, so you can focus on what matters most—growing your business
                 </p>
             </div>

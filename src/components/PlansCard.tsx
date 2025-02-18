@@ -11,7 +11,7 @@ import { Link } from 'react-router';
 function PlansCard({ title, description, price, img, alt, button, site }: { title: string; description: string, price: number, img: string, alt: string, button: string, site: string }) {
     return (
         <FadeIn>
-        <Card className="h-full flex flex-col" sx={{maxWidth: "100%", padding: 2}}>
+        <Card className="h-full flex flex-col" sx={{Width: "100%", padding: 2}}>
           <CardMedia
             sx={{ height: 200, borderRadius: 1}}
             image={img}
